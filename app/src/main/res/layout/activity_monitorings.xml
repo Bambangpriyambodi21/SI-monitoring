@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    tools:context=".Monitorings">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:paddingBottom="25dp"
+            android:fontFamily="serif"
+            android:text="Halaman Monitoring"
+            android:textAlignment="center"
+            android:textColor="#ffff"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            app:backgroundTint="#FFBF02"
+            android:background="@drawable/tombol"
+            android:fontFamily="sans-serif-medium"
+            android:text="Monitoring"
+            />
+
+        <Button
+            android:id="@+id/button15"
+            android:layout_width="250dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/tombol"
+            android:fontFamily="sans-serif-medium"
+            android:layout_height="50dp"
+            app:backgroundTint="#FFBF02"
+            android:text="Data Monitoring" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

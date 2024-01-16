@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="25dp"
+    tools:context=".LoginActivityguru">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/tombol"
+      android:orientation="vertical"
+      android:gravity="center"
+      android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tvPleaseLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" LOGIN GURU"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="serif"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/key" />
+
+    <EditText
+        android:id="@+id/etUsernameguru"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPleaseLogin"
+        android:layout_marginTop="25dp"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:drawablePadding="24dp"
+        android:textColor="@color/black"
+        android:hint="Username"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/etPasswordguru"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etUsernameguru"
+        android:layout_marginTop="12dp"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="24dp"
+        android:textColor="@color/black"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/btnLoginguru"
+        android:layout_below="@id/etPasswordguru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="#FFBF02"
+        android:fontFamily="sans-serif-medium"
+        android:background="@drawable/tombol"
+        android:textColor="#ffff"
+        android:text="Login"/>
+  </LinearLayout>
+
+
+
+</LinearLayout>

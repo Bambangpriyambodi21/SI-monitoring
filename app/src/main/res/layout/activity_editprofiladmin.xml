@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:id="@+id/id"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="7dp"
+        android:background="@drawable/tombol"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profil"
+            android:fontFamily="serif"
+            android:textColor="@color/black"
+            android:paddingBottom="20dp"
+            android:textAlignment="center"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivadmin"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/ic_baseline_person_24" />
+
+        <TextView
+            android:id="@+id/ida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:visibility="gone"
+            android:textSize="20dp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="125dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Nama"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": "
+                android:textColor="@color/black"
+                android:fontFamily="casual"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/etusera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textSize="20dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black"
+                android:minHeight="48dp"
+                android:hint="nama"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="125dp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-medium"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="User ID"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": "
+                android:textColor="@color/black"
+                android:fontFamily="casual"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/etnamaa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:minHeight="48dp"
+                android:hint="user"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="125dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Telp"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": "
+                android:textColor="@color/black"
+                android:fontFamily="casual"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/ettelpa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textSize="20dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black"
+                android:minHeight="48dp"
+                android:hint="nama"/>
+        </TableRow>
+
+        <Button
+            android:id="@+id/button21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="#FFBF02"
+            android:background="@drawable/tombol"
+            android:fontFamily="sans-serif-medium"
+            android:text="simpan" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

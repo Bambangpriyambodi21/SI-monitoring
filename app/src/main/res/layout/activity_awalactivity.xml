@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    android:gravity="center"
+    tools:context=".awalactivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/tombol"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        app:backgroundTint="#FFBF02"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/teks"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Sistem Informasi Monitoring"
+            android:textAlignment="center"
+            android:textColor="#00008b"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/teks2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="PKL"
+            android:textAlignment="center"
+            android:textColor="#00008b"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:paddingBottom="20dp"
+            android:text="SMKN 1 KWANYAR"
+            android:textAlignment="center"
+            android:textColor="#00008b"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/teks"
+            android:layout_alignParentBottom="@+id/teks"
+            app:backgroundTint="#FFBF02"
+            android:background="@drawable/tombol"
+            android:textColor="#00008b"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="5dp"
+            android:text="siswa" />
+
+        <Button
+            android:id="@+id/button17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button16"
+            app:backgroundTint="#FFBF02"
+            android:layout_marginBottom="5dp"
+            android:textColor="#00008b"
+            android:background="@drawable/tombol"
+            android:fontFamily="sans-serif-medium"
+            android:text="guru" />
+
+        <Button
+            android:id="@+id/button18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button17"
+            android:textColor="#00008b"
+            android:background="@drawable/tombol"
+            app:backgroundTint="#FFBF02"
+            android:fontFamily="sans-serif-medium"
+            android:text="admin" />
+    </LinearLayout>
+</LinearLayout>

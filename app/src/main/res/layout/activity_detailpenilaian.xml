@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    tools:context=".detailpenilaian">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="7dp">
+
+        <Button
+            android:id="@+id/button24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="#FFBF02"
+            android:drawableTop="@drawable/ic_baseline_home_24"
+            android:background="@drawable/tombol"
+            android:text="HOME"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="7dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingBottom="30dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="Halaman Nilai"
+                    android:fontFamily="serif"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/idnilai"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="nis"
+                    android:minHeight="48dp"
+                    android:textColor="#fff"
+                    android:visibility="gone" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="75dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:layout_height="wrap_content"
+                        android:text="NIS"
+                        android:textColor="#fff"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=": "
+                        android:textColor="#fff"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/nisnilai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#fff"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp" />
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:text="Nama"
+                        android:textColor="#fff"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=": "
+                        android:textColor="#fff"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/nis2nilai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="#fff"
+                        android:textSize="20dp" />
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="Penampilan dan kerapihan pakaian"
+                        android:textColor="#fff"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="#fff"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/nis3nilai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:textAlignment="center"
+                        android:text="0"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="Komitmen dan integritas"
+                        android:textColor="#fff"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="#fff"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/nis4nilai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:textAlignment="center"
+                        android:text="0"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="menghargai dan menghormati"
+                        android:textColor="#fff"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="#fff"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/nis5nilai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textAlignment="center"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="0"
+                        android:textColor="#fff"
+                        android:textSize="20dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="Kreativitas"
+                        android:textColor="#fff"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="#fff"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/nis6nilai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="#fff"
+                        android:textSize="20dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="Kerja sama tim"
+                        android:textColor="#fff"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="#fff"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/nis7nilai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:fontFamily="sans-serif-medium"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+                        android:textSize="20dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="Disiplin dan tanggung jawab"
+                        android:textColor="#fff"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="#fff"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/nis8nilai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:fontFamily="sans-serif-medium"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+                        android:textSize="20dp" />
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="Penguasaan keilmuan"
+                        android:textColor="#fff"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="#fff"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/nis9nilai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:fontFamily="sans-serif-medium"
+                        android:textAlignment="center"
+                        android:text="0"
+                        android:textColor="#fff"
+                        android:textSize="20dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="Kemampuan mengidentifikasi masalah"
+                        android:textColor="#fff"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="#fff"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/nis10nilai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:text="0"
+                        android:textColor="#fff"
+                        android:fontFamily="sans-serif-medium"
+                        android:textAlignment="center"
+                        android:textSize="20dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Kemampuan menemukan alternatif solusi secara kreatif"
+                        android:textColor="#fff"
+                        android:textSize="20dp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="#fff"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/nis11nilai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:hint=""
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+                        android:textSize="20dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="Keahlian dan keterampilan"
+                        android:textColor="#fff"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="#fff"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/nis12nilai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textColor="#fff"
+                        android:text="0"
+                        android:fontFamily="sans-serif-medium"
+                        android:textAlignment="center"
+                        android:textSize="20dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="inovasi dan kreativitas"
+                        android:textColor="#fff"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="#fff"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/nis13nilai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:text="0"
+                        android:fontFamily="sans-serif-medium"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+                        android:textSize="20dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="Produktivitas dan penyelesaian tugas"
+                        android:textColor="#fff"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="#fff"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/nis14nilai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:text="0"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="#fff"
+                        android:textAlignment="center"
+                        android:textSize="20dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="Penguasaan alat kerja"
+                        android:textColor="#fff"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="#fff"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/nis15nilai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:textAlignment="center"
+                        android:text="0"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="#fff"
+                        android:textSize="20dp" />
+                </TableRow>
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
